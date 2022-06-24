@@ -5,11 +5,11 @@
 #####
 """
 快速理解題意
-- 找到List中兩個value相加等於target,即回傳index
+- 找到List中兩個value相加等於target,即回傳index 
 解題思路
 1.建立hashmap來記錄value的index
 2.每次取得新值就檢查是否找到目標
-3.找到後即跳出
+3.找到後即跳出回圈
 TakeAway
 - 充分利用hashmap來做到資料index的儲存
 """

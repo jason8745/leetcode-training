@@ -12,7 +12,7 @@
 3.stack and i == char_dict[stack[-1]] 是指要同時符合stack不為空,即比對stack最外層
 TakeAway
 - 如果資料有pair關係,可以透過dict維護
-- 如果資料有LIFO特性,可以使用stack
+- 如果資料有LIFO特性,可以使用stack 
 """
 class Solution:
     def isValid(self, s: str) -> bool:
