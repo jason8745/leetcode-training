@@ -1,0 +1,19 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/6/29
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- left join的使用
+====================================
+語法
+
+select FirstName,LastName,City,State
+from Person left join Address
+on Person.PersonId = Address.PersonId;
+
+====================================
+
+

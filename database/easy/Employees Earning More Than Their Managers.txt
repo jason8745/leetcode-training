@@ -1,0 +1,20 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/6/29
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 雖然只有一張表但可以 as成兩張做比較
+====================================
+語法
+
+SELECT e1.Name as Employee
+FROM Employee as e1, Employee as e2
+WHERE e1.ManagerId = e2.Id 
+  AND e1.Salary > e2.Salary;
+
+====================================
+
+

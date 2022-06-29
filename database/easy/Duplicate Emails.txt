@@ -1,0 +1,20 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/6/29
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 使用group by 搭配 having找出重複值
+====================================
+語法
+
+select Email
+from Person
+group by Email
+having count(Email) > 1;
+
+====================================
+
+
