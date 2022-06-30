@@ -1,0 +1,25 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/6/30
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- group by 的用法
+- order by 的用法
+- 使用count(*)來計數
+- desc 降幕排列
+- limit可以限制輸出的答案有幾個
+====================================
+語法
+
+select customer_number
+from orders
+group by customer_number
+order by count(*) desc
+limit 1
+
+====================================
+
+

@@ -1,0 +1,20 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/6/30
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 要用 is NULL 而非 = NULL
+- 不等於有兩種用法: <> 或 !=
+====================================
+語法
+
+select name 
+from customer 
+where referee_id <>2 or referee_id is NULL
+
+====================================
+
+

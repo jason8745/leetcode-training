@@ -1,0 +1,19 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/6/30
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 同一張table用兩次的使用方式
+====================================
+語法
+
+delete p1 
+from Person p1, Person p2
+where p1.Email = p2.Email and p1.Id >p2.Id 
+
+====================================
+
+

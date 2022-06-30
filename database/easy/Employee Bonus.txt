@@ -1,0 +1,20 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/6/30
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 子查詢的使用
+====================================
+語法
+
+select customers.name as 'Customers'
+from customers
+where customers.id not in 
+(select customerid from orders);
+
+====================================
+
+
