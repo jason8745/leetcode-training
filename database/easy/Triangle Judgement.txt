@@ -1,0 +1,32 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/7/1
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- case 的用法 (包含 case、when、then、else、end)
+====================================
+語法
+
+select
+    x,
+    y,
+    z,
+    case
+    when
+        x+y>z and x+z>y and y+z>x 
+    then 'Yes'
+    else 'No'
+    end 
+    as 'triangle'
+from
+    triangle
+
+
+
+
+====================================
+
+

@@ -1,0 +1,28 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/7/1
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- round
+- 可以直接計算
+- ifnull 用法 
+====================================
+語法
+
+select
+round(
+ifnull(
+(select count(distinct requester_id, accepter_id) from RequestAccepted)
+/
+(select count(distinct sender_id, send_to_id) from FriendRequest),
+0)
+, 2) as accept_rate;
+
+
+
+====================================
+
+

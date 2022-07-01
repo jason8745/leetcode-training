@@ -1,0 +1,25 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/7/1
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- self join的概念
+- 邏輯
+- join的用法 
+====================================
+語法
+
+select distinct a.seat_id
+from cinema a join cinema b
+on abs(a.seat_id - b.seat_id)=1
+and a.free=true and b.free=true
+order by a.seat_id
+
+
+
+====================================
+
+
