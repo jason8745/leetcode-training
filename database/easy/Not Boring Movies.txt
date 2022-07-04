@@ -1,0 +1,24 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/7/4
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- mod:地板除法
+- order排序
+====================================
+語法
+
+# Write your MySQL query statement below
+select * 
+from cinema
+where mod(id,2)=1 and description !='boring'
+order by rating desc
+
+
+
+====================================
+
+
