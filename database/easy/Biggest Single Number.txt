@@ -6,24 +6,19 @@
 
 SQL
 TakeAway
-- case 的用法 (包含 case、when、then、else、end)
+- min的用法
+- join的用法
 ====================================
 語法
 
-select
-    x,
-    y,
-    z,
-    case
-    when
-        x+y>z and x+z>y and y+z>x 
-    then 'Yes'
-    else 'No'
-    end 
-    as 'triangle'
+# Write your MySQL query statement below
+select max(num) as num
 from
-    triangle
-
+(select num
+    from MyNumbers
+    group by num
+ having count(num)=1
+) as t
 
 
 

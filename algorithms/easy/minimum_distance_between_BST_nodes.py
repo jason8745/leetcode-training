@@ -11,7 +11,6 @@
 2. [1,0,48,null,null,12,49] inorder-->[0,12,49,48,1]
 TakeAway
 - 直接暴力一個一個比也可以,但是時間複雜度較高
-- 也可以sort完再比,也蠻快的
 """
 # Definition for a binary tree node.
 class TreeNode:

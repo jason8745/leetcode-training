@@ -6,14 +6,14 @@
 
 SQL
 TakeAway
-- 子查詢的使用
+- left join的用法
 ====================================
 語法
 
-select customers.name as 'Customers'
-from customers
-where customers.id not in 
-(select customerid from orders);
+select Employee.name, Bonus.bonus
+from employee 
+left join Bonus on Employee.empid = Bonus.empid
+where bonus <1000 or bonus is NULL
 
 ====================================
 

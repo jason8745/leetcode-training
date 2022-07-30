@@ -6,16 +6,16 @@
 
 SQL
 TakeAway
-- mod:地板除法
-- order排序
+- abs
+- self join
 ====================================
 語法
 
 # Write your MySQL query statement below
-select * 
-from cinema
-where mod(id,2)=1 and description !='boring'
-order by rating desc
+select min(abs(p1.x-p2.x)) as shortest
+from point p1
+join point p2 on p1.x !=p2.x
+
 
 
 

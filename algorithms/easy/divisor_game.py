@@ -5,11 +5,11 @@
 #####
 """
 快速理解題意
-- 詭異題
+- 很像摘花瓣遊戲
 解題思路
-1.思考狀態轉移方程
+1.邏輯
 TakeAway
-- DP
+- 邏輯
 """
 class Solution:
     def divisorGame(self, n: int) -> bool:

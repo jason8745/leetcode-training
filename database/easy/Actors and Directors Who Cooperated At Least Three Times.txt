@@ -6,19 +6,16 @@
 
 SQL
 TakeAway
-- update...set的用法
-- case...set...then...else...end
+- group by
+- having group
 ====================================
 語法
 
 # Write your MySQL query statement below
-update salary
-set
-    sex = case sex
-    when 'm' then 'f'
-    else 'm'
-    end
-
+select actor_id, director_id
+from ActorDirector
+group by actor_id, director_id
+having count(timestamp) >= 3
 
 
 ====================================
