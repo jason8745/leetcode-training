@@ -1,0 +1,24 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/2
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- sum的使用
+- group by 使用
+- having後的條件篩選
+====================================
+語法
+
+select seller_id
+from Sales
+group by seller_id
+having sum(price) >= all (
+      select sum(price)
+      from Sales
+      group by seller_id)
+
+
+====================================

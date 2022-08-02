@@ -1,0 +1,26 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/2
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- count的使用
+- group by 使用
+====================================
+語法
+
+select project_id
+from Project
+group by project_id
+having count(employee_id) = 
+    (select count(employee_id)
+     from Project
+     group by project_id
+     order by count(employee_id) desc
+     limit 1
+    )
+
+
+====================================
