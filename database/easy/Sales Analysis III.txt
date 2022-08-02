@@ -1,0 +1,25 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/3
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- inner join的使用
+- 最後的篩選是關鍵,找出有買S8但沒買iPhone的人
+- having是用來取代where搭配聚合函數(avg、sum、count)使用的
+====================================
+語法
+
+# Write your MySQL query statement below
+SELECT product_id, product_name 
+FROM Product 
+WHERE product_id IN
+(SELECT product_id
+FROM Sales
+GROUP BY product_id
+HAVING MIN(sale_date) >= '2019-01-01' AND MAX(sale_date) <= '2019-03-31')
+
+
+====================================

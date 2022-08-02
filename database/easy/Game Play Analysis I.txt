@@ -1,0 +1,20 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/3
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- group by 
+- 最早的一次日期可以用min()
+====================================
+語法
+
+# Write your MySQL query statement below
+select player_id , min(event_date) as first_login
+from Activity
+group by player_id
+
+
+====================================

@@ -1,0 +1,24 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/3
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- where鎖定兩個條件都要達成
+- 
+====================================
+語法
+
+# Write your MySQL query statement below
+select player_id, device_id
+from Activity
+where (player_id,event_date) in (
+        select player_id,min(event_date)
+        from Activity 
+        group by player_id
+        )
+
+
+====================================

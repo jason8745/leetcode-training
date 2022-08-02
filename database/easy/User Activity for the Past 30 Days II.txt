@@ -1,0 +1,21 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/3
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 計算
+- ifnull(value,alternative)
+====================================
+語法
+
+# Write your MySQL query statement below
+SELECT ifnull(ROUND(COUNT(DISTINCT session_id)/COUNT(DISTINCT user_id), 2),0.00) 
+AS average_sessions_per_user
+FROM Activity 
+WHERE activity_date >= '2019-06-28' and activity_date <= '2019-07-27'; 
+
+
+====================================
