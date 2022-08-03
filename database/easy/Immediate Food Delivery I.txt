@@ -1,0 +1,19 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/3
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- order的使用
+====================================
+語法
+
+select distinct(viewer_id) as id
+from Views
+where author_id = viewer_id 
+order by viewer_id 
+
+
+====================================

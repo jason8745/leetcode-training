@@ -1,0 +1,23 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/4
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 連續join的方法
+- group by 多個值
+- order by 多個值
+====================================
+語法
+
+SELECT student.student_id,student.student_name,subject.subject_name,COUNT(exam.subject_name) as attended_exams
+FROM Students as student
+JOIN Subjects as subject
+LEFT JOIN Examinations as exam
+ON student.student_id=exam.student_id AND subject.subject_name=exam.subject_name
+GROUP BY student.student_id,subject.subject_name
+ORDER BY student_id,subject_name;
+
+====================================

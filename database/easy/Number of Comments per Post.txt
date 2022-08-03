@@ -1,0 +1,26 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/3
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- self join(還較難理解,繼續嘗試)
+- is null
+====================================
+語法
+
+SELECT
+    S1.sub_id AS post_id,
+    COUNT(DISTINCT S2.sub_id) AS number_of_comments
+FROM
+    Submissions S1
+LEFT JOIN
+    Submissions S2
+ON
+    S1.sub_id = S2.parent_id
+WHERE S1.parent_id IS NULL
+GROUP BY S1.sub_id
+
+====================================

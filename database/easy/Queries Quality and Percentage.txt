@@ -1,0 +1,18 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/3
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- 使用avg時,裡面的值會自動sum
+====================================
+語法
+
+select query_name, round(avg(rating/position),2) as quality, round(100*avg(rating < 3),2) as poor_query_percentage
+from Queries
+group by query_name
+
+
+====================================
