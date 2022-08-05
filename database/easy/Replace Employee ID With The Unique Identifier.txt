@@ -1,0 +1,19 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/6
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- left join 的概念和操作
+====================================
+語法
+
+select b.unique_id, a.name
+from Employees a
+left join EmployeeUNI b
+on a.id=b.id
+
+
+====================================

@@ -1,0 +1,24 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/6
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- date的處理方法,篩選區間資料
+- join
+- having篩選
+====================================
+語法
+
+select p.product_name, sum(o.unit) as unit
+from Products p 
+join Orders o 
+on p.product_id = o.product_id
+where order_date >= '2020-02-01' and order_date <= '2020-02-29'
+group by p.product_name
+having sum(o.unit) >= 100 
+
+
+====================================

@@ -1,0 +1,21 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/6
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- GROUP_CONCAT(DISTINCT product ORDER BY product ASC SEPARATOR ',') 這一段字串處理不知道怎麼用就做不出來
+- count的用法
+====================================
+語法
+
+SELECT sell_date,
+		COUNT(DISTINCT(product)) AS num_sold, 
+		GROUP_CONCAT(DISTINCT product ORDER BY product ASC SEPARATOR ',') AS products
+FROM Activities
+GROUP BY sell_date
+ORDER BY sell_date ASC
+
+====================================

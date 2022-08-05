@@ -1,0 +1,20 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/6
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- month 和 year的用法(超實用),以後在哪個月分就可以直接用這個,不用再用範圍
+====================================
+語法
+
+select distinct(t2.title)
+from TVProgram t1
+left join Content t2
+on t1.content_id = t2.content_id
+where t2.Kids_content='Y' and t2.content_type='Movies' 
+and month(t1.program_date) = 6 and year(t1.program_date) = 2020;
+
+====================================

@@ -1,0 +1,21 @@
+#############
+# Author : Yujun Wen
+# Last edit: 2022/8/6
+# email: yujunwen0517@gmail.com
+#####
+
+SQL
+TakeAway
+- ifnull的運用
+- left join的左右位置
+====================================
+語法
+
+select u.name, ifnull(sum(r.distance),0) as travelled_distance
+from Users u
+left join Rides r 
+on r.user_id = u.id
+group by r.user_id
+order by sum(r.distance) desc,u.name
+
+====================================
