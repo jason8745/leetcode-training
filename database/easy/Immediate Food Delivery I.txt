@@ -6,14 +6,13 @@
 
 SQL
 TakeAway
-- order的使用
+- count(*)
+- round()
+- sum()用法
 ====================================
 語法
 
-select distinct(viewer_id) as id
-from Views
-where author_id = viewer_id 
-order by viewer_id 
+select round(100 * sum(order_date = customer_pref_delivery_date) / count(*), 2) as immediate_percentage from Delivery;
 
 
 ====================================

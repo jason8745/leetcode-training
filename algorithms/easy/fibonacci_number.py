@@ -29,7 +29,6 @@ class Solution:
 # Recurrsion
 class Solution:
     cache = {0: 0, 1: 1}
-
     def fib(self, N: int) -> int:
         if N in self.cache:
             return self.cache[N]

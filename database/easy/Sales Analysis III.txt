@@ -6,9 +6,8 @@
 
 SQL
 TakeAway
-- inner join的使用
-- 最後的篩選是關鍵,找出有買S8但沒買iPhone的人
-- having是用來取代where搭配聚合函數(avg、sum、count)使用的
+- group by + having
+- 日期 between用法
 ====================================
 語法
 
