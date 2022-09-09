@@ -5,6 +5,8 @@
 #####
 """
 Note
+Time complexity O(logN)
+Space complexity O(1) 
 """
 
 class Solution:
@@ -36,5 +38,4 @@ class Solution:
             end = r-1
         return [st,end]
         
-# time complexity O(logN)
-# space complexity O(1)       
+      

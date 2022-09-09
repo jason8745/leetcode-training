@@ -6,6 +6,8 @@
 """
 Note
 透過BS快速找到沒有升序排列的值
+Time complexity O(logN)
+Space complexity O(1)   
 """
 
 class Solution:
@@ -20,5 +22,4 @@ class Solution:
                 r = mid
         return l
         
-# time complexity O(logN)
-# space complexity O(1)       
+     
